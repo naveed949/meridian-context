@@ -1,0 +1,16 @@
+# Phase 1 — minimal stack (Step 0+)
+# Python 3.11+ recommended.
+#
+# Install (from repo root):
+#   python3.11 -m venv .venv
+#   source .venv/bin/activate   # Windows: .venv\Scripts\activate
+#   pip install -U pip
+#   pip install -r requirements-phase1.txt
+#
+# sentence-transformers will pull PyTorch. For a smaller CPU-only wheel first:
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+#   pip install -r requirements-phase1.txt
+
+jupyter>=1.0.0
+numpy>=1.26.0,<3
+sentence-transformers>=3.0.0
