@@ -17,6 +17,7 @@ Meridian Context is a retrieval stack—not a demo notebook—built for teams th
 - **[Learning plan & roadmap](docs/learning-plan.md)** — phased curriculum, target architecture, checklist, and “done” criteria  
 - **[Docs index](docs/README.md)**  
 - **[Phase 1 — Step 0 setup](docs/phase1-step0.md)** — Python 3.11+ venv, `requirements-phase1.txt`, corpus `data/phase1/`, notebook `notebooks/phase1_dense_rag_baseline.ipynb`
+- **[Phase 1 — Step 1](docs/phase1-step1.md)** — pairwise cosine on a small sentence set (same notebook, after Step 0)
 
 ## Repository
 
