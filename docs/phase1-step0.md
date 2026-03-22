@@ -52,4 +52,6 @@ Run **Step 0** cells through **0.3**: Python version assert, corpus listing, imp
 
 ## 5. Hand off to Step 1
 
-Next notebook section (when you add cells): embed one sentence, print vector shape, optional paraphrase cosine table—see `docs/learning-plan.md` Phase 1.
+**Step 1** lives in `notebooks/phase1_dense_rag_baseline.ipynb` under **Step 1**: after the shape sanity check in §0.3, run the **pairwise cosine** cells on the curated sentence set. Written recap: [phase1-step1.md](./phase1-step1.md).
+
+Then continue with **Step 2** (chunk → embed → top-k) per the notebook’s “Next (Step 2+)” cell and `docs/learning-plan.md` Phase 1.
