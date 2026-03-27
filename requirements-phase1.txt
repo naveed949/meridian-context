@@ -15,3 +15,5 @@ jupyter>=1.0.0
 matplotlib>=3.8.0
 numpy>=1.26.0,<3
 sentence-transformers>=3.0.0
+
+# Step 5: local Ollama (OpenAI-compatible API). Env: OLLAMA_BASE_URL, OLLAMA_MODEL, OLLAMA_TIMEOUT_S (default 3600), OLLAMA_DOUBLE_CALL, OLLAMA_DISABLE.

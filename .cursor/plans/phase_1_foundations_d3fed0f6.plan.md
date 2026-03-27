@@ -13,7 +13,7 @@ todos:
     status: pending
   - id: integrate-prompt
     content: Wire top-k chunks into prompt template; measure end-to-end latency
-    status: pending
+    status: completed
   - id: checkpoint-failures
     content: Document 5+ failure modes with examples and stage attribution; link notebook from docs/README
     status: pending
