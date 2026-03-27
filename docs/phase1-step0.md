@@ -52,4 +52,10 @@ Run **Step 0** cells through **0.3**: Python version assert, corpus listing, imp
 
 ## 5. Hand off to Step 1
 
-Next notebook section (when you add cells): embed one sentence, print vector shape, optional paraphrase cosine table—see `docs/learning-plan.md` Phase 1.
+In `notebooks/phase1_dense_rag_baseline.ipynb`, run **Step 1** (after Step 0):
+
+1. **1.1** — One sentence → `(384,)` vector; bar chart of the first 24 dimensions; optional random 2D projection printout.
+2. **1.2** — Table of cosine similarities: meeting paraphrases vs unrelated sentences (uses a small `cosine_sim` helper reused in Step 2).
+3. **1.3** — Synonym-swap checkpoint: three pairs (synonym vs nonsense control); confirm cosine is higher for real synonyms.
+
+Install plot support once: `pip install matplotlib` (included in `requirements-phase1.txt`). Then continue with **Step 2** in the same notebook when you add it (chunk → embed → top-k).
