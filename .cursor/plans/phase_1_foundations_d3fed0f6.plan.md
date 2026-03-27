@@ -84,14 +84,16 @@ Suggested recurring diagram types:
 
 ## Step 3 — ANN indexes (HNSW / IVFFlat) — conceptual only
 
+**Deliverable:** Theory and diagrams live in **[docs/phase1-step3-ann-theory.md](docs/phase1-step3-ann-theory.md)** (not the notebook). The notebook has a **short pointer** to that doc plus the **comment-only ANN hook** cell after Step 2.
+
 **Concept (visual):** Brute force = compare query to **every** chunk. **ANN** builds a **graph or clusters** so you visit only a **subset** of candidates—fast but **approximate** (recall < 100% possible).
 
 **Practice (lightweight):**
 
-- Draw **two diagrams**: (A) linear scan over all points; (B) “navigate neighborhood graph” sketch.
-- **Optional code:** If you use **FAISS** or **pgvector** later, Phase 1 only needs a **comment** in the notebook: “ANN goes here; for Phase 1 we use exact search to isolate embedding quality.”
+- **Two diagrams** (Mermaid): (A) linear scan over all points; (B) “navigate neighborhood graph” sketch — both in the markdown doc above.
+- **Optional code:** Notebook comment: “ANN goes here; for Phase 1 we use exact search to isolate embedding quality.”
 
-**Checkpoint question:** “Why might my ANN miss the best chunk even if embeddings are perfect?”
+**Checkpoint question:** “Why might my ANN miss the best chunk even if embeddings are perfect?” — answered in §6 of the same doc.
 
 ---
 
@@ -176,6 +178,7 @@ The plan’s **checkpoint** is: **list 5 failure modes you observed**. Turn this
 
 - Notebook: e.g. `notebooks/phase1_dense_rag_baseline.ipynb`
 - Corpus: e.g. `data/phase1/*.md`
+- Step 3 theory: [docs/phase1-step3-ann-theory.md](docs/phase1-step3-ann-theory.md)
 - Notes: extend [docs/learning-plan.md](docs/learning-plan.md) or add `docs/phase1-notes.md` with failure-mode table and latency table
 
 No new dependencies are mandated beyond your chosen embedding path; keep Phase 1 **minimal** so Phase 2–3 remain the main engineering depth.

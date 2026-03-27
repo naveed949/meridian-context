@@ -58,4 +58,4 @@ In `notebooks/phase1_dense_rag_baseline.ipynb`, run **Step 1** (after Step 0):
 2. **1.2** — Table of cosine similarities: meeting paraphrases vs unrelated sentences (uses a small `cosine_sim` helper reused in Step 2).
 3. **1.3** — Synonym-swap checkpoint: three pairs (synonym vs nonsense control); confirm cosine is higher for real synonyms.
 
-Install plot support once: `pip install matplotlib` (included in `requirements-phase1.txt`). Then continue with **Step 2** in the same notebook when you add it (chunk → embed → top-k).
+Install plot support once: `pip install matplotlib` (included in `requirements-phase1.txt`). Then continue with **Step 2** in the same notebook (chunk → embed → top-k). **Step 3** (ANN theory only) is documented in [phase1-step3-ann-theory.md](./phase1-step3-ann-theory.md), with a short pointer in the notebook.
