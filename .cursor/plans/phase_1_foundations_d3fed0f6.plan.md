@@ -4,10 +4,10 @@ overview: "Turn Phase 1 of [docs/learning-plan.md](docs/learning-plan.md) into a
 todos:
   - id: env-corpus
     content: Set up Python notebook env, pick one embedding path, create 3–10 doc mini-corpus under data/phase1/
-    status: pending
+    status: completed
   - id: concept-embed-sim
     content: Study embeddings + cosine with diagrams; implement chunk → embed → cosine top-k in notebook
-    status: pending
+    status: completed
   - id: concept-ann-rag
     content: Add ANN concept note/diagram; write RAG vs full-doc comparison table on same questions
     status: pending
